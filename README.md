@@ -117,9 +117,9 @@ Database: intrnrDB, Collections: user_details, posts, comments, engagement.
 
 ## Usage
 1. Sign Up
-  - Navigate to /signup.
-  - Enter name, email, password.
-  - Download mnemonic or verify phrase.
+    - Navigate to /signup.
+    - Enter name, email, password.
+    - Download mnemonic or verify phrase.
 
 2. Log In
   - Enter email hint.
