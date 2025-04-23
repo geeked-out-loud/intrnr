@@ -117,19 +117,19 @@ Database: intrnrDB, Collections: user_details, posts, comments, engagement.
 
 ## Usage
 1. Sign Up
-  -- Navigate to /signup.
-  -- Enter name, email, password.
-  -- Download mnemonic or verify phrase.
+  - Navigate to /signup.
+  - Enter name, email, password.
+  - Download mnemonic or verify phrase.
 
 2. Log In
-  -- Enter email hint.
-  -- Input full 12-word mnemonic to regenerate public key.
-  -- Upon success, redirected to /feed.
+  - Enter email hint.
+  - Input full 12-word mnemonic to regenerate public key.
+  - Upon success, redirected to /feed.
    
 3. Feed
- -- Browse public posts.
- -- Click View Post to open modal.
- -- Like/Dislike or comment on posts.
+ - Browse public posts.
+ - Click View Post to open modal.
+ - Like/Dislike or comment on posts.
 
 ---
 
