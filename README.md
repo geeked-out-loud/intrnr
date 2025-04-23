@@ -73,12 +73,14 @@ Mnemonic Generation Keypair Derivation
 1. **Clone the Repo**  
    ```bash
    git clone https://github.com/yourusername/intrnr.git
-   cd intrnr```
+   cd intrnr
+   ```
    
 2. Setup Backend
    ```bash
    cd backend
-   npm install```
+   npm install
+   ```
 
 
 3. Configure MongoDB
@@ -90,20 +92,22 @@ Database: intrnrDB, Collections: user_details, posts, comments, engagement.
    ```bash
    npm run dev       # nodemon app.js
    # or
-   node app.js```
-
+   node app.js
+   ```
 
 5. Setup Frontend
 
    ```bash
    cd ../frontend
-   npm install```
+   npm install
+   ```
    
 5. Run Frontend
 
    ```bash
    npm run dev
-   # Visit http://localhost:3000```
+   # Visit http://localhost:3000
+   ```
    
 Usage
 Sign Up
