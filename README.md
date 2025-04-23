@@ -52,6 +52,7 @@ Login and authentication rely on users entering their recovery phrase to regener
 
 ## Architecture
 
+```mermaid
 graph TD
   A[Next.js Client] --> B[Express.js API]
   B --> C[MongoDB Database]
@@ -60,6 +61,7 @@ graph TD
   C --> C2[posts]
   C --> C3[comments]
   C --> C4[engagement]
+```
 
 Mnemonic Generation Keypair Derivation
 (bip39) (SHA-256)
