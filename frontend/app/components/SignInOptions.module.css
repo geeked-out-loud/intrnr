@@ -1,0 +1,128 @@
+.container {
+  width: 85%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  
+}
+
+.heading {
+  width: 100%;
+  margin: 0 0 20px 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #172a3a;
+  text-align: left;
+}
+
+.input {
+  color: #000d18;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 2px solid #000d18;
+  margin-bottom: 12px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #aec5ca;
+}
+
+input::placeholder {
+    color: #000d18;
+  }
+
+.errorContainer {
+  width: 100%;
+  background-color: #ffe6e6;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ff0000;
+  margin-bottom: 12px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.errorText {
+  color: #ff0000;
+  font-size: 0.9rem;
+}
+
+.primaryButton {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #172a3a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: #0f1e2a;
+}
+
+.separatorContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.separatorLine {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.separatorText {
+  margin: 0 8px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.guestButton {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #000d18;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.guestButton:hover {
+  background-color: #000a14;
+}
+
+.footer {
+  width: 100%;
+  font-size: 1rem;
+  color: #000;
+  text-align: left;
+  padding: 0 0 5px 5px;
+}
+
+.footerLink {
+  color: #172a3a;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.errorColor {
+  border-color: #ff0000;
+}

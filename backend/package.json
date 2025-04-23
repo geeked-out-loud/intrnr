@@ -1,0 +1,16 @@
+{
+  "name": "intrnr-backend",
+  "version": "1.0.0",
+  "description": "Backend for the blockchain-enabled community forum",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bip39": "^3.0.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^5.0.0",
+    "uuid": "^11.1.0"
+  }
+}

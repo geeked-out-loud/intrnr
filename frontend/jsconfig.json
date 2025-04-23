@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Set the base URL to the root of the project
+    "paths": {
+      "components/*": ["components/*"] // Map "components/*" to the components directory
+    }
+  }
+}
