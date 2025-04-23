@@ -52,17 +52,14 @@ Login and authentication rely on users entering their recovery phrase to regener
 
 ## Architecture
 
-[Next.js Frontend]
-        |
-        v
-[Express.js Backend API]
-        |
-        v
-[MongoDB Database]
-    ├── user_details
-    ├── posts
-    ├── comments
-    └── engagement
+graph TD
+  A[Next.js Client] --> B[Express.js API]
+  B --> C[MongoDB Database]
+
+  C --> C1[user_details]
+  C --> C2[posts]
+  C --> C3[comments]
+  C --> C4[engagement]
 
 Mnemonic Generation Keypair Derivation
 (bip39) (SHA-256)
