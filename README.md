@@ -113,30 +113,25 @@ Database: intrnrDB, Collections: user_details, posts, comments, engagement.
    # Visit http://localhost:3000
    ```
    
-Usage
-Sign Up
+---
 
-Navigate to /signup.
+## Usage
+1. Sign Up
+  -- Navigate to /signup.
+  -- Enter name, email, password.
+  -- Download mnemonic or verify phrase.
 
-Enter name, email, password.
+2. Log In
+  -- Enter email hint.
+  -- Input full 12-word mnemonic to regenerate public key.
+  -- Upon success, redirected to /feed.
+   
+3. Feed
+ -- Browse public posts.
+ -- Click View Post to open modal.
+ -- Like/Dislike or comment on posts.
 
-Download mnemonic or verify phrase.
-
-Log In
-
-Enter email hint.
-
-Input full 12-word mnemonic to regenerate public key.
-
-Upon success, redirected to /feed.
-
-Feed
-
-Browse public posts.
-
-Click View Post to open modal.
-
-Like/Dislike or comment on posts.
+---
 
 API Reference
 Auth Routes (/auth)
