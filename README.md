@@ -191,21 +191,3 @@ Database: intrnrDB, Collections: user_details, posts, comments, engagement.
     ├── package.json
     └── public/
 ```
----
-
-## Development Notes
-
-1. Environment: Node.js v18+, Next.js 13+, MongoDB 5+.
-2. Local Storage: stores device-specific password.
-3. Session Storage: holds email hint for login flow.
-4. Auto-Increment IDs: handled via countDocuments() + 1.
-
----
-
-## Contributing
-
-1. Fork the repo
-2. Create feature branch (git checkout -b feat/YourFeature)
-3. Commit changes (git commit -m 'Add feature')
-4. Push (git push origin feat/YourFeature)
-5. Open a Pull Request
