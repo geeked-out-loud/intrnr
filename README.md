@@ -122,46 +122,48 @@ Database: intrnrDB, Collections: user_details, posts, comments, engagement.
     - Download mnemonic or verify phrase.
 
 2. Log In
-  - Enter email hint.
-  - Input full 12-word mnemonic to regenerate public key.
-  - Upon success, redirected to /feed.
+    - Email hint.
+    - Input full 12-word mnemonic to regenerate public key.
+    - Upon success, redirected to /feed.
    
 3. Feed
- - Browse public posts.
- - Click View Post to open modal.
- - Like/Dislike or comment on posts.
+    - Browse public posts.
+    - Click View Post to open modal.
+    - Like/Dislike or comment on posts.
 
 ---
 
-API Reference
-Auth Routes (/auth)
+## API Reference
 
-Method	Endpoint	Description
-POST	/signup	Create user, return mnemonic + priv.
-POST	/login	Verify mnemonic, return success.
-GET	/userinfo	Fetch current user by session/email.
-Posts Routes (/post)
+### Auth Routes (`/auth`)
 
-Method	Endpoint	Description
-GET	/post	Fetch all public posts.
-POST	/post	Create a new post.
-POST	/post/:id/like	Like a post.
-POST	/post/:id/dislike	Dislike a post.
-POST	/post/:id/comment	Add comment to a post.
-Engagement (/engagement) & Comments (/comment)
-GET /engagement?post_id=...
+| Method | Endpoint    | Description                          |
+|--------|-------------|--------------------------------------|
+| POST   | `/signup`   | Create user, return mnemonic + priv. |
+| POST   | `/login`    | Verify mnemonic, return success.     |
+| GET    | `/userinfo` | Fetch current user by session/email. |
 
-POST /engagement { post_id, action, public_key }
+### Posts Routes (`/post`)
 
-GET /comment?post_id=...
+| Method | Endpoint                 | Description               |
+|--------|--------------------------|---------------------------|
+| GET    | `/post`                  | Fetch all public posts.   |
+| POST   | `/post`                  | Create a new post.        |
+| POST   | `/post/:id/like`         | Like a post.              |
+| POST   | `/post/:id/dislike`      | Dislike a post.           |
+| POST   | `/post/:id/comment`      | Add comment to a post.    |
 
-POST /comment { post_id, public_key, content }
+### Engagement (/engagement) & Comments (/comment)
+1. GET /engagement?post_id=...
+2. POST /engagement { post_id, action, public_key }
+3. GET /comment?post_id=...
+4. POST /comment { post_id, public_key, content }
 
-Folder Structure
-pgsql
-Copy
-Edit
-intrnr/
+---
+
+##Folder Structure
+```bash
+  intrnr/
 ├── backend/
 │   ├── app.js
 │   ├── package.json
@@ -188,22 +190,22 @@ intrnr/
     ├── components/
     ├── package.json
     └── public/
-Development Notes
-Environment: Node.js v18+, Next.js 13+, MongoDB 5+.
+```
+---
 
-Local Storage: stores device-specific password.
+## Development Notes
 
-Session Storage: holds email hint for login flow.
+1. Environment: Node.js v18+, Next.js 13+, MongoDB 5+.
+2. Local Storage: stores device-specific password.
+3. Session Storage: holds email hint for login flow.
+4. Auto-Increment IDs: handled via countDocuments() + 1.
 
-Auto-Increment IDs: handled via countDocuments() + 1.
+---
 
-Contributing
-Fork the repo
+## Contributing
 
-Create feature branch (git checkout -b feat/YourFeature)
-
-Commit changes (git commit -m 'Add feature')
-
-Push (git push origin feat/YourFeature)
-
-Open a Pull Request
+1. Fork the repo
+2. Create feature branch (git checkout -b feat/YourFeature)
+3. Commit changes (git commit -m 'Add feature')
+4. Push (git push origin feat/YourFeature)
+5. Open a Pull Request
